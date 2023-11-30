@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    image: suatsunay17/student-ci:1.0.0
+    ports:
+      - "8855:8855" # Map port 3030 on the host to port 3030 in the container
+    environment:
+      - NODE_ENV=production
